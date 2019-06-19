@@ -1,0 +1,22 @@
+https://www.draw.io
+#
+https://kin.naver.com/qna/detail.nhn?d1id=1&dirId=10402&docId=329331320&mode=answer
+이거 알고리즘 문자도로 만들어 주실 분 구합니다ㅠㅠ내공 많이 800걸구 오늘안에 최대한빨리 부탁드려요..
+myGrade = 0
+sumGrade = 0
+term = int(input("계산할 학기 수 입력(1~6):"))
+for i in range(term):
+    totUnit = 0
+    totGrade = 0
+    print(i+1, end="")
+    subjectCount=int(input("학기 과목 수 입력: "))
+    for j in range(subjectCount):
+        print(j+1, end="")
+        unit=int(input("과목 단위 수: "))
+        grade=int(input("석차 등급:"))
+        totUnit += unit
+        totGrade += grade*unit
+    termGrade = totGrade/totUnit
+    sumGrade += termGrade
+myGrade = sumGrade/term
+#0001.xml

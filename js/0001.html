@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>원기둥 부피계산</title>
+    <script>
+        function calculate(){
+            var r = prompt("반지름?","");
+            var height = prompt("높이?","");
+            var v = (r*r*Math.PI)*height;
+            document.getElementsByTagName('h1')[0].innerHTML = v;
+        }
+    </script>
+  </head>
+  <body>
+    <h1><script>calculate();</script></h1>
+  </body>
+</html>
